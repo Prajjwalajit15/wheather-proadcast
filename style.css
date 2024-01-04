@@ -1,0 +1,174 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    background-color: #2b2750;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .material-symbols-outlined {
+    font-family: 'Material Icons Outlined';
+  }
+ 
+  #weatherForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+  }
+
+  h1 {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .frm {
+    height: 50px;
+  }
+
+  button {
+    width: 100px;
+    height: 53px;
+    margin-left: 10px;  
+    background-color: #403571; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    /* box-shadow: 1px 4px 15px rgb(20, 17, 17); */
+    transition: background-color 0.3s ease;
+    color: #b4b5d0;
+  }
+
+  button:hover {
+    background-color: #6159af;
+  }
+
+  #cityInput {
+    padding-left: 30px;  
+    background-image: url('https://fonts.gstatic.com/s/i/materialiconsoutlined/search/v12/24px.svg');
+    background-size: 20px;  
+    background-position: 5px center;  
+    background-repeat: no-repeat;
+    width: 500px;  
+    background-color: #3b2769;
+    color: white;
+    box-shadow: 1px 4px 15px rgb(20, 17, 17);
+  }
+
+  #cityInput:focus {
+    outline: none; 
+  }
+   input{
+    border-style: none;
+    border-radius: 5px;
+   }
+  .city-weather {
+    background-image: url('./assets/Rectangle\ 1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 150px;
+    border-radius: 10px;
+    margin: 20px;
+  }
+  .city-weather{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .row1{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 15px;
+  }
+  .row2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 18px;
+  }
+  img{
+    width: 100px; 
+    margin-right: -20px;
+  }
+  
+.weather-condation {
+  padding-left: 20px; 
+}
+.img-container{ 
+    width: 100px;
+    margin-right: -15px;
+    padding-bottom: 20px;
+    /* padding-left: 15px; */
+}
+.temerature{
+  font-size: 30px;
+}
+.HL{
+  color: #aea2d7;
+  font-size: 12px;
+}
+.weather-condation,.city{
+  font-size: 20px;
+}
+  
+.cards{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 50px;
+}
+@media only screen and (max-width: 766px) {
+  /* #cityInput{
+    width:60%; 
+  } */
+  h1{
+    font-size: 25px;
+  }
+  #cityInput{
+    height: 30px;
+   }
+   button{
+    height: 34px;
+   }
+}
+ 
+@media only screen and (max-width: 488px) {
+   h1{
+    font-size: 20px;
+   }
+ #cityInput{
+  height: 30px;
+ }
+ button{
+  height: 34px;
+ }
+ #cityInput{
+  width: 200px;
+}
+}
+@media screen and (max-width: 375px) {
+  #cityInput {
+    width: 150px;
+    font-size: 10px;
+}
+   button{
+    font-size: 10px;
+   }
+}
+@media screen and (min-width: 1400px) {
+  #cityInput {
+    width:   800px;
+    font-size: 20px;
+}
+button{
+  font-size: 20px;
+}
+h1{
+  font-size: 60px;
+}
+    
+}
